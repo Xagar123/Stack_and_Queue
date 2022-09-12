@@ -4,11 +4,10 @@ import java.util.Scanner;
 public class StackQueue {
     public static void main(String[] args) {
         //Welcome Message for User
-        System.out.println("Welcome to Stacks and Queues Problems using Linked List developed be Tahir Mansuri.");
+        System.out.println("Welcome to Stacks and Queues Problems using Linked List .");
 
         Scanner sc = new Scanner(System.in);
 
-        //LinkedList linkedList = new LinkedList();
         LinkedList<Integer> linkedList = new LinkedList<>();
 
         int choice;
@@ -21,14 +20,12 @@ public class StackQueue {
                 case 1:
                     System.out.println("Enter the Data to Push in Stack : ");
                     int dataFirst = sc.nextInt();
-                    linkedList.add(dataFirst);
+                    linkedList.addFirst(dataFirst);
                     break;
                 case 2:
+                    linkedList.peek();
                     break;
                 case 3:
-                    for(Integer i : linkedList) {
-                        linkedList.get(i);
-                    }
                     break;
                 case 4:
                     break;
@@ -38,6 +35,5 @@ public class StackQueue {
                     break;
             }
         }while(choice != 6);
-
-}
+    }
 }
